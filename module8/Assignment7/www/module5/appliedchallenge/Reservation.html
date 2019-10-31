@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Hunter Hackley | INFO 2349 | Applied Challenge #1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <link rel="stylesheet" href="_css/appliedchallenge.css">
+  <link rel="stylesheet" href="_css/themes/theme1.css">
+  <link rel="stylesheet" href="_css/themes/jquery.mobile.icons.min.css">
+</head>
+
+<body>
+  <!-- Hunter Hackley
+     index.html
+     INFO2439
+     Thoendel
+     10/13/19
+-->
+  <div data-role="page" id="applied challenge">
+    <div data-role="header">
+      <a data-ajax="false" href="../index.html" data-icon="home" rel="external">Home</a>
+      <p style="text-align:center;"><img src="img/sagelogo.png" alt="Sage Bistro Logo"></p>
+      <div class="topnav">
+        <a data-ajax="false" href="appliedchallenge.html">Survey</a>
+        <a data-ajax="false" href="Findus.html">Find Us</a>
+        <a data-ajax="false" href="Reservation.html">Reservation</a>
+        <a data-ajax="false" href="Menu.html">Menu</a>
+      </div>
+    </div>
+    <div data-role="main" class="ui-content">
+      <h3>Reservations</h3>
+      <p>Reservations are highly-recommended for dinner, Monday through Thursday, with available seating times
+        from 6-8 p.m. Call us at 531-MCC-2328 to make reservations, or click here to make reservations through <a
+          href="http://www.opentable.com/sage-student-bistro-institute-for-the-culinary-arts-reservations-omaha?restref=52120&amp;rtype=ism">OpenTable.com</a>.
+        We also request that you call 531-MCC-2328 to make lunch reservations for parties of six or more. Lunch
+        reservations are not required nor accepted for parties smaller than six.</p>
+      <br>
+      
+      <br>
+      <button type="button" class="collapsible">Hours of Operation</button>
+      <div class="content">
+        <p>The Sage Student Bistro is currently closed for summer. We will reopen on September 16 for lunch and
+          September 23 for dinner service. Please review detailed dates per service listed below. We look forward to
+          serving you soon!</p>
+      </div>
+      <br>
+      <button type="button" class="collapsible">Fall Quarter 2019 Lunch</button>
+      <div class="content">
+        <p>Open Monday, Sept. 16 through Thursday, Oct. 10 <br> Closed Monday, Oct. 14 through Thursday, Oct. 17
+          <br> Open Monday, Oct. 21 through Thursday, Nov. 14</p>
+      </div>
+      <br>
+      <button type="button" class="collapsible">Fall Quarter 2019 Dinner</button>
+      <div class="content">
+        <p>Open Monday, Sept. 23 through Thursday, Nov. 14</p>
+      </div>
+      <br>
+      <button type="button" class="collapsible">Hours of Operation (When Open)</button>
+      <div class="content">
+        <p>Lunch: Monday - Thursday: 11 a.m. - 1 p.m. (last seating at 1 p.m.) <br> Dinner: Monday - Thursday: 6-8
+          p.m. (last seating at 8 p.m.)</p>
+      </div>
+      <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }</script>
+      <div data-role="footer" data-position="fixed" data-id="footernav" data-theme="b">Contact: <a
+          href="mailto:hkhackley@mail.mccneb.edu" class="ui-btn-active">Hunter H</a></div>
+</body>
+
+</html>

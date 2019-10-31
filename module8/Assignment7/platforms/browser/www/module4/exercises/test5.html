@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Example 5</title>
+<meta name="viewport" 
+      content="width=device-width, initial-scale=1">	
+<link rel="stylesheet" 
+      href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script type="text/javascript" 
+        src="http://code.jquery.com/jquery-2.1.3.min.js">
+</script>
+<script type="text/javascript" 
+        src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js">
+</script>
+</head>
+
+<body>
+    <!-- Hunter Hackley
+     index.html
+     INFO2439
+     Thoendel
+     10/5/19
+-->
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>Form Demo</h1>
+	</div>
+	
+	<div role="main" class="ui-content">
+		
+		<form action="echo.html" method="post">
+			
+		<div class="ui-field-contain">
+			<label for="meal">How would you rate your meal today?</label>
+			<select name="meal" id="meal">
+				<option value="rating1">1-Poor</option>
+				<option value="rating2">2-Needs Work</option>
+				<option value="rating3">3-Fair</option>
+				<option value="rating4">4-Good</option>
+				<option value="rating5">5-Excellent</option>
+			</select>
+		</div>
+
+		<div class="ui-field-contain">
+		    <input type="submit" name="submit" value="Send"  />
+		</div>	
+		
+		</form>
+
+	</div>
+
+</div>
+
+</body>
+</html>

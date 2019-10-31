@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Hunter Hackley | INFO 2349 | Applied Challenge #1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <link rel="stylesheet" href="_css/appliedchallenge.css">
+  <link rel="stylesheet" href="_css/themes/theme1.css">
+  <link rel="stylesheet" href="_css/themes/jquery.mobile.icons.min.css">
+</head>
+
+<body>
+  <!-- Hunter Hackley
+     index.html
+     INFO2439
+     Thoendel
+     10/13/19
+-->
+  <input name="recipient" type="hidden" value="hkhackley@mail.mccneb.edu">
+  <div data-role="page" id="applied challenge">
+    <div data-role="header">
+      <a data-ajax="false" href="../index.html" data-icon="home" rel="external">Home</a>
+      <p style="text-align:center;"><img src="img/sagelogo.png" alt="Sage Bistro Logo"></p>
+      <div class="topnav">
+        <a data-ajax="false" href="appliedchallenge.html">Survey</a>
+        <a data-ajax="false" href="Findus.html">Find Us</a>
+        <a data-ajax="false" href="Reservation.html">Reservation</a>
+        <a data-ajax="false" href="Menu.html">Menu</a>
+      </div>
+    </div>
+    <h1>Static Dinner Menu-Fall 2019</h1>
+    <p1>The Sage Student Bistro serves wine and beer. We maintain a concise but thoughtful beverage list featuring red
+      and white wines, as well as an assortment of local and imported beers. If you have a special bottle you would like
+      to enjoy in our restaurant, corking service is available for just $10 per 750 ml bottle. </p1>
+    <button type="button" class="collapsible">Entrees</button>
+    <div class="content">
+      <p2>
+        <h1>THREE LITTLE PIGS / 10</h1> 
+        trio of pork tenderloin medallions I peppercorn sauce garlic mashed potatoes I fresh
+        green beans<br>
+        <h1>AUTUMN VEGETABLE CASSOULET / 7</h1> cannellini beans I parsnips I carrots I fennel I sweet potato leeks I peppers I
+        shallots I toasted herb breadcrumbs</br>
+        <h1>LINGUINE LAGASSE / 8</h1> wild mushrooms I tasso ham I creole seasoning I cream tomato I scallion I linguine pasta I
+        blue cheese crostini</br>
+        <h1>CHICKEN KATSU / 8</h1> panko coated chicken breast I jasmine rice japanese tonkatsu sauce I cabbage I chili
+        cukes</br>
+        <h1>SALMON MARRAKESH / 12</h1> moroccan bbq salmon fillet I roasted vegetable couscous toasted pistachios
+        <br>
+        <p2></p2>
+      </p2>
+    </div>
+    <br>
+    <button type="button" class="collapsible">Sandwiches</button>
+    <div class="content">
+      <p2><h1>TORTA AL PASTOR / 7</h1> mexican style braised pork I grilled pineapple and red onion oaxaca cheese I avocado salsa
+        I telera roll<br>
+        <h1>PHILLY FRENCH DIP / 9</h1> lean roast beef au-jus I sautéed mushrooms and onions provolone cheese I creamy
+        horseradish I baguette<br>
+        <h1>KILLER KOWALSKI / 6</h1> sweet potatoes I beets I feta cheese I red onion I lettuce tomato I roasted pepper aioli I
+        brioche<br>
+        <h1>TEXAS HOLDEM / 8</h1>grilled chicken breast I ancho chili bbq sauce pepperjack cheese I bacon I slaw I texas
+        toast<br>
+        <h1>BISTRO BURGER / 7</h1>BEYOND BURGER/ 8 fresh angus beef OR plant based vegetarian burger toasted brioche I lettuce I
+        tomato I pickle I onion choice of pepperjack, provolone, cheddar or American cheese ADD bacon, avocado, egg,
+        sautéed onions or mushrooms / 1
+      </p2>
+    </div>
+    <br>
+    <button type="button" class="collapsible">Salads</button>
+    <div class="content">
+      <p2><h1>EMPIRE STATE SALAD / 7</h1> fuji apples I golden raisins I chili hazelnuts everything bagel crisps I mixed greens I
+        apple cider vinaigrette<br>
+        <h1>MERRITT STREET SALAD / 8</h1> artichokes I pancetta I beets I gorgonzola I sunflower seeds organic mixed greens I
+        balsamic vinaigrette<br>
+        <h1>LO RIDER / 9</h1> grilled shrimp I avocado I tomato I olives I spanish onion sweet peppers I crispy tortillas I
+        chilled greens chipotle ranch dressing<br>
+        <h1>BISTRO SIDE SALAD / 3</h1> REG / 5 LARGE mixed greens I tomato I cucumber I carrot I radish I olives CHOOSE balsamic
+        vinaigrette, apple cider vinaigrette, chipotle ranch or buttermilk ranch dressing
+        ADD grilled chicken breast / 3 salmon or shrimp / 5
+      </p2>
+    </div>
+    <br>
+    <button type="button" class="collapsible">Sides</button>
+    <div class="content">
+      <h1>Meal Sides</h1>
+      French Fries / 2<br>
+        Duck Fat Tater Tots / 2
+      </p2>
+      <h1>BEVERAGES</h1>
+      <p2>Bottled Soda 8 Water / 1.5<br>
+        Coffee 8 Hot Tea / 1.00</p2>
+      <h1>DESSERTS</h1>
+      <p2>Cookies / 1.00<br>
+        Bars/ Fruit Bread / 1.5<br>
+        Special Dessert / 2.5<br>
+        Thimmie's Bread Pudding / 2.5</p2>
+    </div>
+    <script>  var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }</script>
+    <div data-role="main" class="ui-content">
+      <div data-role="footer" data-position="fixed" data-id="footernav" data-theme="b">Contact: <a
+          href="mailto:hkhackley@mail.mccneb.edu" class="ui-btn-active">Hunter H</a></div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</body>
+
+</html>

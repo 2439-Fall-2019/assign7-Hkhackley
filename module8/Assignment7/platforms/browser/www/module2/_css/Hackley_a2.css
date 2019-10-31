@@ -1,0 +1,15 @@
+h1 {
+    color: red;
+    font-weight: bold;
+
+}
+body {
+    background-color: gray;
+}
+ul {
+    color: red;
+    font-weight: bold;
+}
+.top-header {
+    text-align: center;
+}

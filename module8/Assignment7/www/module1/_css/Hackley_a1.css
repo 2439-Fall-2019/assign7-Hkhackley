@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+background: #D0E4F5 url("/images/smiley.jpg") no-repeat scroll 50% 50%;
+.ui-content{
+    background-color: lightred;
+}
+.page{
+    background-color: lightred;
+}
